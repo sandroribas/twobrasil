@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0 auto; padding:0;}
+body{ width:100%; height:auto; background: #CCC;}
+#container{width:100%; height:auto; background: url(img/bg.png) no-repeat center 0 !important; position: absolute!important;}
+#topo{ width: 960px; height:auto; background: #990;}
+#logo{width: 30%; height:150px; background:#9F0; float: left; }
+#nav-topo{ width:70%; height: 150px; background:#993; float:left;}
+#slider{ width: 960px; height:400px; background:#9C0; float:left;}
+#conteudo-slider{width: 100%; height:350px; background:#0CF}
+#nav-slider{width: 100%; height:50px; background:#09F;}
+#corpo{ width:960px; height:600px; background:#FF0000; clear:left;}
+
+#corpo-2col{ width:960px; height: 600px; background:#FFF;}
+#conteudo-principal{width:700px; height: 600px; background: #9C0; float:left}
+#barra-lateral{width:260px; height: 600px; background:#FFF; float:left;}
+#rodape{ width:960px; height: 170px; background:#000; clear:left}
+
+.clear-left{ clear:left}
