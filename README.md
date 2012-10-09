@@ -1,1 +1,1 @@
-#Seja bem vindo ao teste de Sandro Ribas de instala&ccdeil;&atilde;o do maldito GIT. 
+#Seja bem vindo ao teste de Sandro Ribas de instala&ccedil;&atilde;o do maldito GIT. 
