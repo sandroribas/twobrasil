@@ -4,8 +4,8 @@
 body{ width:100%; height:auto; background: #CCC;}
 #container{width:100%; height:auto; background: url(img/bg.png) no-repeat center 0 !important; position: absolute!important;}
 #topo{ width: 960px; height:auto; background: #990;}
-#logo{width: 30%; height:150px; background:#9F0; float: left; }
-#nav-topo{ width:70%; height: 150px; background:#993; float:left;}
+#logo{width: 30%; height:100px; background:#9F0; float: left; }
+#nav-topo{ width:70%; height: 100px; background:#993; float:left;}
 #slider{ width: 960px; height:400px; background:#9C0; float:left;}
 #conteudo-slider{width: 100%; height:350px; background:#0CF}
 #nav-slider{width: 100%; height:50px; background:#09F;}
