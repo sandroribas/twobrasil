@@ -9,5 +9,6 @@ estilo dos layouts est&aacute;.</p>
   <li>Inserir imagens que entrarão no layout primário.</li>
   <li>Incluir jQuery.</li>
   <li>Contruir fades para os botões com sprites.</li>
+  <li>Usar media Queries.</li>
   <li>Coeçar a construção do wordpress theme</li>
 </ul>
