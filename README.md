@@ -1,4 +1,4 @@
-#<h1>Layout Base</h1>
+﻿#<h1>Layout Base</h1>
 <p>Os layouts <em>"<strong>layout_no-col.html</strong>"</em> e <em>"<strong>layout_2-col.html</strong>"</em> ser&atilde;o as bases
 para o tema para wordpress que estou criando para a TWOBrasil, enquanto o <em>"<strong>style.css</strong>"</em> é onde todo o
 estilo dos layouts est&aacute;.</p>
@@ -11,5 +11,5 @@ estilo dos layouts est&aacute;.</p>
   <li>Contruir fades para os botões com sprites.</li>
   <li>Usar media Queries.</li>
   <li>Coeçar a construção do wordpress theme</li>
-  <li>Por enquanto é só!</li>
+  <li>Por enquanto é só isso!</li>
 </ul>
