@@ -1,2 +1,2 @@
-#<h1>Seja bem vindo ao teste de Sandro Ribas de instala&ccedil;&atilde;o do maldito GIT. </h1>
-<p>E l&aacute; vamos n&oacute;s!</p>
+#<h1>Layout Base</h1>
+<p>Os layouts layout_no-col.html e layout_2-col.html serõas as bases para o tema para wordpress que estou criando para a TWOBrasil.</p>
