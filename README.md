@@ -1,2 +1,2 @@
 #<h1>Layout Base</h1>
-<p>Os layouts layout_no-col.html e layout_2-col.html ser&atilde;o as bases para o tema para wordpress que estou criando para a TWOBrasil.</p>
+<p>Os layouts <em>"<strong>layout_no-col.html</strong>"</em> e <em>"<strong>layout_2-col.html</strong>"</em> ser&atilde;o as bases para o tema para wordpress que estou criando para a TWOBrasil.</p>
