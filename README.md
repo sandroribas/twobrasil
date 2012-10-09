@@ -3,7 +3,7 @@
 para o tema para wordpress que estou criando para a TWOBrasil, enquanto o <em>"<strong>style.css</strong>"</em> é onde todo o
 estilo dos layouts est&aacute;.</p>
 
-#<h4>Tarefas a fazer antes de desenvolver o <strong>2Br theme</strong>:</h4>
+#<h4>Tarefas a fazer antes de desenvolver o <strong><em>2Br theme</em></strong>:</h4>
 <ul>
   <li>Formatar fontes, tamanhos e cores das fontes usadas.</li>
   <li>Inserir imagens que entrarão no layout primário.</li>
