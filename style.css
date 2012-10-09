@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 *{ margin:0 auto; padding:0;}
-body{ width:100%; height:auto; background: #CCC;}
+body{ width:100%; height:auto; background-image: url(img/tile.jpg);}
 #container{width:100%; height:auto; background: url(img/bg.png) no-repeat center 0 !important; position: absolute!important;}
 #topo{ width: 960px; height:auto; background: #990;}
 #logo{width: 30%; height:100px; background:#9F0; float: left; }
