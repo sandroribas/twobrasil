@@ -11,4 +11,5 @@ estilo dos layouts est&aacute;.</p>
   <li>Contruir fades para os botões com sprites.</li>
   <li>Usar media Queries.</li>
   <li>Coeçar a construção do wordpress theme</li>
+  <li>Por enquanto é só!</li>
 </ul>
