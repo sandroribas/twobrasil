@@ -11,7 +11,7 @@ img, object, embed, video {
 	width:100%;
 }
 
-body{width:100%; height:auto; background-image:url(img/bg.png); background-position:top left; background-repeat:no-repeat; background-color:#eeeeee;}
+body{width:100%; height:auto; background-image:url(img/bg2.png); background-position:100% top; background-repeat:no-repeat; background-color:#eeeeee;}
 
 .floatLeft, .floatRight{ display:block; margin:15px auto;}
 .imargem{ padding-left: 0px;}
@@ -47,14 +47,15 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		display: block;
 	}
 	#logo {
-		background:#00F;
+		background-image: url(img/logo-topo.png);
+		background-repeat:no-repeat;
+		background-position: 0px 0px;
 		height:75px;
 		margin-left: 0;
 		width: 100%;
 		display: block;
 	}
 	#nav-topo {
-		background:#F00;
 		clear: both;
 		float: left;
 		height:50px;
@@ -66,8 +67,7 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 	display: none;
 																						  
 	}
-	#menu {
-		background: #F90;                                                                             
+	#menu {                                                                            
 	clear: both;                                                                         
 	float: left;                                                                           
 	margin-left: 0;
@@ -97,9 +97,13 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 	min-height:35px;                                                                     
 	margin-left: 0;                                                                          
 	width: 100%;                                                                       
-	display: block;
-	background:#093;                                                                           
+	display: block;                                                                          
 	}
+	
+	#leg{background:#F30; width: 100%; height:auto; margin:0 auto; padding-bottom:20px; text-align:center}
+	#leg h1{ color:#fff; text-align:left; margin-top: 20px;}
+	#leg p{ color:#CCC; text-align:left; }
+	
 	#imagem {   
 	clear: both;                                                                       
 	float: left;
@@ -109,7 +113,8 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 	}
 	#imagem img{ padding:0; margin:0 auto;}
 	#nav-slider {
-		background:#09F;
+		border-bottom: #CCC solid 1px;
+		border-top: #CCC solid 1px;
 		clear: both;
 		float: left;
 		min-height:50px;
@@ -118,7 +123,6 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		display: block;
 	}
 	#corpo {
-		background: #3C0;
 		clear: both;
 		float: left;
 		min-height:200px;
@@ -126,6 +130,13 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		width: 100%;
 		display: block;
 	}
+	.home-cols{ width:100%; min-height:400px; height:auto; display:block; float:left; text-align:center; border-bottom:#999 dashed 1px;}
+	.home-cols:last-child{ border-bottom:none;}
+	
+	.h1-homecol{margin: 40px 5px 30px 5px; color: #ff3300;}
+	.img-homecol{margin: 0px 0px;}
+	.txt-homecol{ margin: 30px 20px 0px 20px; text-align:left;}
+	
 	#conteudo-principal {                                                                                  
 	/*float: left;                                                                                  
 	margin-left: 0;                                                                             
@@ -139,11 +150,11 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 	display: block;*/                                                                              
 	}
 	#rodape {
-		background:#333;
+		background:#ff3300;
 		clear: both;
 		float: left;
 		margin-left: 0;
-		min-height:50px;
+		min-height:75px;
 		width: 100%;
 		display: block;
 	}
@@ -169,7 +180,6 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		
 	}
 	#nav-topo {
-		background:#993;
 		float: left;
 		height:100px;
 		margin-left: 0;
@@ -177,7 +187,7 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 	}
 	
 	#busca {
-		background:#C60;
+		border-bottom: #CCC solid 1px;
 		clear: both;
 		float: left;
 		height:35%;
@@ -186,7 +196,6 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		display: block;
 	}
 	#menu {
-		background:#F30;
 		clear: both;
 		float: left;
 		height:65%;
@@ -210,13 +219,16 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		display: block;
 	}
 	#legenda {/*fazer faux column para esta div*/
-		background:#F30;
 		float: left;
 		height: auto/*400px*/;
 		margin-left: 0;
 		width: 40%;
 		display: block;
 	}
+	
+	#leg{background:#F30; width: 80%; height:auto; margin:0 auto; padding-bottom:50px; text-align:center}
+	#leg h1{ color:#fff; text-align:left; margin-top: 50px;}
+	#leg p{ color:#CCC; text-align:left; }
 	
 	#imagem {
 		float: left;
@@ -228,7 +240,7 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 	#imagem img{padding:0; margin:0 auto;}
 	
 	#nav-slider {
-		background:#09F;
+		border-bottom:#999 solid .5px;
 		clear: both;
 		float: left;
 		height:50px;
@@ -297,7 +309,6 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		
 	}
 	#nav-topo {
-		background:#993;
 		float: left;
 		height:100px;
 		margin-left: 0;
@@ -305,7 +316,7 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 	}
 	
 	#busca {
-		background:#C60;
+		border-bottom: #CCC solid 1px;
 		clear: both;
 		float: left;
 		height:35%;
@@ -314,7 +325,6 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		display: block;
 	}
 	#menu {
-		background:#F30;
 		clear: both;
 		float: left;
 		height:65%;
@@ -323,6 +333,7 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		display: block;
 	}
 	#slider {
+		border-top: #CCC solid 1px;
 		clear: both;
 		float: left;
 		height: 450px;
@@ -338,13 +349,17 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		display: block;
 	}
 	#legenda {
-		background:#F30;
 		float: left;
 		height:auto/*400px*/;
 		margin-left: 0;
 		width: 40%;
 		display: block;
+		margin-top: 7%;
 	}
+	
+	#leg{background:#F30; width: 80%; height:auto; margin:0 auto; padding-bottom:50px; text-align:center}
+	#leg h1{ color:#fff; text-align:left; margin-top: 50px;}
+	#leg p{ color:#CCC; text-align:left; }
 	
 	#imagem {
 		float: left;
@@ -355,13 +370,15 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 	}
 	#imagem img{ padding:0px; margin:0 auto; }
 	#nav-slider {
-		background:#09F;
+		border-bottom: #CCC solid 1px;
+		border-top: #CCC solid 1px;
 		clear: both;
 		float: left;
 		height:50px;
 		margin-left: 0;
 		width: 100%;
 		display: block;
+		text-align:center;
 	}
 	#corpo {
 		clear: both;
@@ -397,7 +414,7 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 	}
 	
 	#rodape {
-		background:#000;
+		background:#ff3300;
 		clear: both;
 		float: left;
 		height: 190px;
