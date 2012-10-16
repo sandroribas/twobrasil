@@ -11,7 +11,7 @@ img, object, embed, video {
 	width:100%;
 }
 
-body{width:100%; height:auto; background-image:url(img/bg2.png); background-position:100% top; background-repeat:no-repeat; background-color:#eeeeee;}
+body{width:100%; height:auto; background-image:url(img/bg3.png); background-position:0 top; background-repeat:no-repeat; background-color:#eeeeee;}
 
 .floatLeft, .floatRight{ display:block; margin:15px auto;}
 .imargem{ padding-left: 0px;}
@@ -49,8 +49,8 @@ body{width:100%; height:auto; background-image:url(img/bg2.png); background-posi
 	#logo {
 		background-image: url(img/logo-topo.png);
 		background-repeat:no-repeat;
-		background-position: 0px 0px;
-		height:75px;
+		background-position: top 50px;
+		height:101px;
 		margin-left: 0;
 		width: 100%;
 		display: block;
@@ -333,6 +333,7 @@ body{width:100%; height:auto; background-image:url(img/bg2.png); background-posi
 		display: block;
 	}
 	#slider {
+		/*background:#eee;*/
 		border-top: #CCC solid 1px;
 		clear: both;
 		float: left;
