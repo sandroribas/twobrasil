@@ -237,14 +237,17 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		display: block;
 	}
 	#corpo {
-		background:#FF0000;
 		clear: both;
 		float: left;
-		height:600px;/*definir min-height e após os testes alterar o height para auto*/
+		min-height:400px;/*definir min-height e após os testes alterar o height para auto*/
+		height:auto;
 		margin-left: 0;
 		width: 100%;
 		display: block;
 	}
+	
+	.home-cols{ width:25%; min-height:400px; height:auto; display:block; float:left; text-align:center;}
+	
 	#conteudo-principal {
 		background: #F00;
 		float: left;
@@ -285,7 +288,7 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		margin: auto;
 	}
 	#logo {
-		background:#9F0;
+		background: url(img/logo-topo.png) no-repeat top left;
 		float: left;
 		height:100px;
 		margin-left: 0;
@@ -322,7 +325,7 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 	#slider {
 		clear: both;
 		float: left;
-		height: auto/*450px*/;
+		height: 450px;
 		margin-left: 0;
 		width: 100%;
 		display: block;
@@ -361,14 +364,20 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		display: block;
 	}
 	#corpo {
-		background:#FF0000;
 		clear: both;
 		float: left;
-		height:600px;/*definir min-height e após os testes alterar o height para auto*/
+		min-height:400px;/*definir min-height e após os testes alterar o height para auto*/
+		height:auto;
 		margin-left: 0;
 		width: 100%;
 		display: block;
 	}
+	.home-cols{ width:25%; min-height:400px; height:auto; display:block; float:left; text-align:center;}
+	
+	.h1-homecol{margin: 40px 5px 30px 5px; color: #ff3300;}
+	.img-homecol{margin: 0px 0px;}
+	.txt-homecol{ margin: 30px 20px 0px 20px; text-align:left;}
+	
 	#conteudo-principal {
 		background: #F00;
 		float: left;
@@ -391,7 +400,7 @@ body{width:100%; height:auto; background-image:url(img/bg.png); background-posit
 		background:#000;
 		clear: both;
 		float: left;
-		height: 170px;
+		height: 190px;
 		margin-left: 0;
 		width: 100%;
 		display: block;
