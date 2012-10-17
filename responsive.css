@@ -150,13 +150,18 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	display: block;*/                                                                              
 	}
 	#rodape {
-		background:#ff3300;
+		background: #1D1D1D/*#ff3300*/;
 		clear: both;
 		float: left;
 		margin-left: 0;
 		min-height:75px;
 		width: 100%;
 		display: block;
+		border-radius: 10px 10px 0px 0px; 
+		-moz-border-radius: 10px 10px 0px 0px; 
+		-webkit-border-radius: 10px 10px 0px 0px; 
+		border: 2px solid #1d1d1d;
+		margin-top: 10px;
 	}
 }
 
@@ -261,31 +266,43 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	.home-cols{ width:25%; min-height:400px; height:auto; display:block; float:left; text-align:center;}
 	
 	#conteudo-principal {
-		background: #F00;
+		margin-top: 2px;
+		margin-bottom: 5px;
+		border-right: 1px solid #CCC;
 		float: left;
-		height:600px;
+		min-height:250px;
+		height:auto;
 		margin-left: 0;
-		width: 70%;
+		width: 69.9%;
 		display: block;
 	}
 	
 	#barra-lateral {
-		background:#999;
+		margin-top: 2px;
+		margin-bottom: 5px;
 		float: left;
-		height:600px;
+		min-height:250px;
+		height:auto;
 		margin-left: 0;
 		width: 30%;
 		display: block;
 	}
 	
+	#barra-lateral *{ margin:20px 20px;}
+	
 	#rodape {
-		background:#000;
+		background:#1D1D1D/*#ff3300*/;
 		clear: both;
 		float: left;
-		height: 170px;
+		height: 190px;
 		margin-left: 0;
 		width: 100%;
 		display: block;
+		border-radius: 10px 10px 0px 0px; 
+		-moz-border-radius: 10px 10px 0px 0px; 
+		-webkit-border-radius: 10px 10px 0px 0px; 
+		border: 2px solid #1d1d1d;
+		margin-top:3px;
 	}
 }
 
@@ -311,9 +328,17 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	#nav-topo {
 		float: left;
 		height:100px;
+		margin-top: 0px;
 		margin-left: 0;
 		width: 70%;
+		position:relative;
 	}
+	
+	#navegacao-principal{ width:100%; height:100px; text-align:center; margin:0 auto; padding:0px; position: relative}
+	#navegacao-principal li{ float:left; list-style:none; height: 50px; position: relative; top: 0px; padding: 0px; width: 20%; }
+	#navegacao-principal a{ height: 50px; width: 100%; position:absolute; top: 25px; left:0px; padding-top: 25px; text-decoration:none; color:#ff3300; font-size:18px; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px;   }
+	#navegacao-principal a:hover{ height: 50px; width: 100%; background: #CCC; position:absolute; top: 25px; left:0px; padding-top: 25px; color:#ff3300; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px; color:#F93  }
+	#navegacao-principal .btn-ativo{ height: 50px; width: 100%; background: #FF3300; position:absolute; top: 25px; left:0px; padding-top: 25px; color:#CCC; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px; }
 	
 	#busca {
 		border-bottom: #CCC solid 1px;
@@ -323,15 +348,8 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 		margin-left: 0;
 		width: 100%;
 		display: block;
-	}
-	#menu {
-		clear: both;
-		float: left;
-		height:auto;
-		margin-left: 0;
-		width: 100%;
-		display: block;
-	}
+	}	
+	
 	#slider {
 		/*background:#eee;*/
 		border-top: #CCC solid 1px;
@@ -380,6 +398,8 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 		width: 100%;
 		display: block;
 		text-align:center;
+		z-index: 10;
+		
 	}
 	#corpo {
 		clear: both;
@@ -397,31 +417,43 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	.txt-homecol{ margin: 30px 20px 0px 20px; text-align:left;}
 	
 	#conteudo-principal {
-		background: #F00;
+		margin-top: 2px;
+		margin-bottom: 5px;
+		border-right: 1px solid #CCC;
 		float: left;
-		height:600px;
+		min-height:250px;
+		height:auto;
 		margin-left: 0;
-		width: 70%;
+		width: 69.9%;
 		display: block;
 	}
 	
 	#barra-lateral {
-		background:#999;
+		margin-top: 2px;
+		margin-bottom: 5px;
 		float: left;
-		height:600px;
+		min-height:250px;
+		height:auto;
 		margin-left: 0;
 		width: 30%;
 		display: block;
 	}
 	
+	#barra-lateral *{ margin:20px 20px;}
+	
 	#rodape {
-		background:#ff3300;
+		background:#1D1D1D/*#ff3300*/;
 		clear: both;
 		float: left;
 		height: 190px;
 		margin-left: 0;
 		width: 100%;
 		display: block;
+		border-radius: 10px 10px 0px 0px; 
+		-moz-border-radius: 10px 10px 0px 0px; 
+		-webkit-border-radius: 10px 10px 0px 0px; 
+		border: 2px solid #1d1d1d;
+		margin-top:3px;
 	}
 	.floatLeft{ float:left; margin:5px 10px 5px 0px;}
 	.floatRight{ float:right; padding-right: 250px;}
