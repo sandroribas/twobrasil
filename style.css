@@ -1,21 +1,461 @@
 @charset "utf-8";
-/* CSS Document */
-*{ margin:0 auto; padding:0;}
-body{ width:100%; height:auto; background-image: url(img/tile.jpg);}
-#container{width:100%; height:auto; background: url(img/bg.png) no-repeat center 0 !important; position: absolute!important;}
-#topo{ width: 960px; height:auto; background: #990; display: block;}
-#logo{width: 30%; height:100px; background:#9F0; float: left; }
-#nav-topo{ width:70%; height: 100px; background:#993; float:left;}
-#busca{ width: 100%; height:35%; background:#C60;}
-#menu{ width: 100%; height:65%; background:#F30;}
-#slider{ width: 960px; height:400px; background:#9C0; float:left;}
-#conteudo-slider{width: 100%; height:350px; background:#0CF}
-#nav-slider{width: 100%; height:50px; background:#09F;}
-#corpo{ width:960px; height:600px; background:#FF0000; clear:left; display: block;}
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
 
-#corpo-2col{ width:960px; height: 600px; background:#FFF; display: block;}
-#conteudo-principal{width:700px; height: 600px; background: #9C0; float:left}
-#barra-lateral{width:260px; height: 600px; background:#FFF; float:left;}
-#rodape{ width:960px; height: 170px; background:#000; clear:left; display: block;}
+body{width:100%; height:auto; background-image:url(img/bg3.png); background-position:0 top; background-repeat:no-repeat; background-color:#eeeeee;}
 
-.clear-left{ clear:left}
+.floatLeft, .floatRight{ display:block; margin:15px auto;}
+.imargem{ padding-left: 0px;}
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+@media only screen and (max-width: 480px) {
+	.gridContainer {
+		margin-left: auto;
+		margin-right: auto;
+		width: 87.36%;
+		padding-left: 1.82%;
+		padding-right: 1.82%;
+	}
+	#topo {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#logo {
+		background-image: url(img/logo-topo.png);
+		background-repeat:no-repeat;
+		background-position: top 50px;
+		height:101px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#nav-topo {
+		clear: both;
+		float: left;
+		height:50px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#busca {                                                                         
+	display: none;
+																						  
+	}
+	#menu {                                                                            
+	clear: both;                                                                         
+	float: left;                                                                           
+	margin-left: 0;
+	height:50px;                                                                         
+	width: 100%;                                                                               
+	display: block;                                                                      
+	}
+	#slider {
+		clear: both;
+		float: left;
+		height:auto;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#conteudo-slider {
+		float: left;
+		height:auto;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		position:relative
+	}
+	#legenda {                                                                          
+	clear: both;                                                                          
+	float: left;  
+	min-height:35px;                                                                     
+	margin-left: 0;                                                                          
+	width: 100%;                                                                       
+	display: block;                                                                          
+	}
+	
+	#leg{background:#F30; width: 100%; height:auto; margin:0 auto; padding-bottom:20px; text-align:center}
+	#leg h1{ color:#fff; text-align:left; margin-top: 20px;}
+	#leg p{ color:#CCC; text-align:left; }
+	
+	#imagem {   
+	clear: both;                                                                       
+	float: left;
+	min-height: 283px;
+	width: 100%;
+	display: block;
+	}
+	#imagem img{ padding:0; margin:0 auto;}
+	#nav-slider {
+		border-bottom: #CCC solid 1px;
+		border-top: #CCC solid 1px;
+		clear: both;
+		float: left;
+		min-height:50px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#corpo {
+		clear: both;
+		float: left;
+		min-height:200px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	.home-cols{ width:100%; min-height:400px; height:auto; display:block; float:left; text-align:center; border-bottom:#999 dashed 1px;}
+	.home-cols:last-child{ border-bottom:none;}
+	
+	.h1-homecol{margin: 40px 5px 30px 5px; color: #ff3300;}
+	.img-homecol{margin: 0px 0px;}
+	.txt-homecol{ margin: 30px 20px 0px 20px; text-align:left;}
+	
+	#conteudo-principal {                                                                                  
+	/*float: left;                                                                                  
+	margin-left: 0;                                                                             
+	width: 100%;                                                                                 
+	display: block; */                                                                                 
+	}
+	#barra-lateral {                                                                                                                                                     
+	/*float: left;	                                                                                  
+	margin-left: 0;                                                              
+	width: 100%;
+	display: block;*/                                                                              
+	}
+	#rodape {
+		background: #1D1D1D/*#ff3300*/;
+		clear: both;
+		float: left;
+		margin-left: 0;
+		min-height:75px;
+		width: 100%;
+		display: block;
+		border-radius: 10px 10px 0px 0px; 
+		-moz-border-radius: 10px 10px 0px 0px; 
+		-webkit-border-radius: 10px 10px 0px 0px; 
+		border: 2px solid #1d1d1d;
+		margin-top: 10px;
+	}
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	.gridContainer {
+		width: 88.2%;
+		max-width: 1232px;
+		padding-left: 0.9%;
+		padding-right: 0.9%;
+		margin: auto;
+	}
+	#logo {
+		background:#9F0;
+		float: left;
+		height:100px;
+		margin-left: 0;
+		width: 30%;
+		 
+		
+	}
+	#nav-topo {
+		float: left;
+		height:100px;
+		margin-left: 0;
+		width: 70%;
+	}
+	
+	#busca {
+		border-bottom: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height:35%;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#menu {
+		clear: both;
+		float: left;
+		height:auto;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#slider {
+		clear: both;
+		float: left;
+		height: auto/*450px*/;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#conteudo-slider {
+		float: left;
+		height: auto/*400px*/;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#legenda {/*fazer faux column para esta div*/
+		float: left;
+		height: auto/*400px*/;
+		margin-left: 0;
+		width: 40%;
+		display: block;
+	}
+	
+	#leg{background:#F30; width: 80%; height:auto; margin:0 auto; padding-bottom:50px; text-align:center}
+	#leg h1{ color:#fff; text-align:left; margin-top: 50px;}
+	#leg p{ color:#CCC; text-align:left; }
+	
+	#imagem {
+		float: left;
+		height: auto/*400px*/;
+		margin-left: 0;
+		width: 60%;
+		display: block;
+	}
+	#imagem img{padding:0; margin:0 auto;}
+	
+	#nav-slider {
+		border-bottom:#999 solid .5px;
+		clear: both;
+		float: left;
+		height:50px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#corpo {
+		clear: both;
+		float: left;
+		min-height:400px;/*definir min-height e após os testes alterar o height para auto*/
+		height:auto;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	
+	.home-cols{ width:25%; min-height:400px; height:auto; display:block; float:left; text-align:center;}
+	
+	#conteudo-principal {
+		margin-top: 2px;
+		margin-bottom: 5px;
+		border-right: 1px solid #CCC;
+		float: left;
+		min-height:250px;
+		height:auto;
+		margin-left: 0;
+		width: 69.9%;
+		display: block;
+	}
+	
+	#barra-lateral {
+		margin-top: 2px;
+		margin-bottom: 5px;
+		float: left;
+		min-height:250px;
+		height:auto;
+		margin-left: 0;
+		width: 30%;
+		display: block;
+	}
+	
+	#barra-lateral *{ margin:20px 20px;}
+	
+	#rodape {
+		background:#1D1D1D/*#ff3300*/;
+		clear: both;
+		float: left;
+		height: 190px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		border-radius: 10px 10px 0px 0px; 
+		-moz-border-radius: 10px 10px 0px 0px; 
+		-webkit-border-radius: 10px 10px 0px 0px; 
+		border: 2px solid #1d1d1d;
+		margin-top:3px;
+	}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	.gridContainer {
+		width: 88.2%;
+		max-width: 1232px;
+		padding-left: 0.9%;
+		padding-right: 0.9%;
+		margin: auto;
+	}
+	#logo {
+		background: url(img/logo-topo.png) no-repeat top left;
+		float: left;
+		height:100px;
+		margin-left: 0;
+		width: 30%;
+		 
+		
+	}
+	#nav-topo {
+		float: left;
+		height:100px;
+		margin-top: 0px;
+		margin-left: 0;
+		width: 70%;
+		position:relative;
+	}
+	
+	#navegacao-principal{ width:100%; height:100px; text-align:center; margin:0 auto; padding:0px; position: relative}
+	#navegacao-principal li{ float:left; list-style:none; height: 50px; position: relative; top: 0px; padding: 0px; width: 20%; }
+	#navegacao-principal a{ height: 50px; width: 100%; position:absolute; top: 25px; left:0px; padding-top: 25px; text-decoration:none; color:#ff3300; font-size:1.4em; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px;   }
+	#navegacao-priencipal a:hover{ height: 50px; width: 100%; background: #CCC; position:absolute; top: 25px; left:0px; padding-top: 25px; color:#ff3300; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px; color:#F93  }
+	#navegacao-principal .btn-ativo{ height: 50px; width: 100%; background: #FF3300; position:absolute; top: 25px; left:0px; padding-top: 25px; color:#CCC; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px; }
+	
+	#busca {
+		border-bottom: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height:35%;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}	
+	
+	#slider {
+		/*background:#eee;*/
+		border-top: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height: 450px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#conteudo-slider {
+		float: left;
+		height:auto/*400px*/;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#legenda {
+		float: left;
+		height:auto/*400px*/;
+		margin-left: 0;
+		width: 40%;
+		display: block;
+		margin-top: 7%;
+	}
+	
+	#leg{background:#F30; width: 80%; height:auto; margin:0 auto; padding-bottom:50px; text-align:center}
+	#leg h1{ color:#fff; text-align:left; margin-top: 50px;}
+	#leg p{ color:#CCC; text-align:left; }
+	
+	#imagem {
+		float: left;
+		height: auto/*400px*/;
+		margin-left: 0;
+		width: 60%;
+		display: block;
+	}
+	#imagem img{ padding:0px; margin:0 auto; }
+	#nav-slider {
+		border-bottom: #CCC solid 1px;
+		border-top: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height:50px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		text-align:center;
+		z-index: 10;
+		
+	}
+	#corpo {
+		clear: both;
+		float: left;
+		min-height:400px;/*definir min-height e após os testes alterar o height para auto*/
+		height:auto;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	.home-cols{ width:25%; min-height:400px; height:auto; display:block; float:left; text-align:center;}
+	
+	.h1-homecol{margin: 40px 5px 30px 5px; color: #ff3300;}
+	.img-homecol{margin: 0px 0px;}
+	.txt-homecol{ margin: 30px 20px 0px 20px; text-align:left;}
+	
+	#conteudo-principal {
+		margin-top: 2px;
+		margin-bottom: 5px;
+		border-right: 1px solid #CCC;
+		float: left;
+		min-height:250px;
+		height:auto;
+		margin-left: 0;
+		width: 69.9%;
+		display: block;
+	}
+	
+	#barra-lateral {
+		margin-top: 2px;
+		margin-bottom: 5px;
+		float: left;
+		min-height:250px;
+		height:auto;
+		margin-left: 0;
+		width: 30%;
+		display: block;
+	}
+	
+	#barra-lateral *{ margin:20px 20px;}
+	
+	#rodape {
+		background:#1D1D1D/*#ff3300*/;
+		clear: both;
+		float: left;
+		height: 190px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		border-radius: 10px 10px 0px 0px; 
+		-moz-border-radius: 10px 10px 0px 0px; 
+		-webkit-border-radius: 10px 10px 0px 0px; 
+		border: 2px solid #1d1d1d;
+		margin-top:3px;
+	}
+	.floatLeft{ float:left; margin:5px 10px 5px 0px;}
+	.floatRight{ float:right; padding-right: 250px;}
+	.imargem{ padding-left: 55px !important; padding-right: 10px;}
+}

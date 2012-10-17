@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Design Responsivo HTML5 sem colunas</title>
 <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
-<link href="style.css" rel="stylesheet" type="text/css">
+<link href="responsive.css" rel="stylesheet" type="text/css">
 <!-- 
 To learn more about the conditional comments around the html tags at the top of the file:
 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
@@ -34,7 +34,7 @@ Do the following if you're using your customized build of modernizr (http://www.
   	<div id="logo"></div>
     <div id="nav-topo">
    	  <!--<div id="busca">This is the content for Layout Div Tag "busca"</div>-->
-      
+     
       	<ul id="navegacao-principal">
             <li>
             	<a href="#" class="btn-ativo" title="Menu 1">Home</a>
@@ -52,8 +52,8 @@ Do the following if you're using your customized build of modernizr (http://www.
             	<a href="#" title="Menu 5">Contato</a>
             </li>
         </ul>
-      
-    </div><!--fim NAV-TOPO-->
+     
+    </div><!--Fim do NAVEGACAO-PRINCIPAL-->
 	<div id="slider">
    	  <div id="conteudo-slider">
       	<div id="legenda">
@@ -67,11 +67,39 @@ Do the following if you're using your customized build of modernizr (http://www.
       <div id="nav-slider">This is the content for Layout Div Tag "nav-slider"</div>
     </div><!--fim do SLIDER-->
   
-   <div id="conteudo-principal">This is the content for Layout Div Tag "conteudo-principal"</div>
-  <div id="barra-lateral">
-  	<h3>This is the content for Layout Div Tag "barra-lateral"</h3>
-    <p>This is the content for Layout Div Tag "barra-lateral". This is the content for Layout Div Tag "barra-lateral".</p>
-  </div>
+    <div id="corpo">
+      <div class="home-cols">
+      		<h1 class="h1-homecol">Mobile & Desktop</h1>
+          	<img src="img/col1.png" alt="onon 1" class="img-homecol" />
+            <p class="txt-homecol">
+            	PEXCIL™ designs and develops websites for all browsers and devices, from desktop to tablet and mobile.
+            </p>
+      </div><!--fim das home-cols-->
+      
+      <div class="home-cols">
+      		<h1 class="h1-homecol">Tempo</h1>
+          	<img src="img/col2.png" alt="onon 2" class="img-homecol" />
+         	 <p class="txt-homecol">
+            	PEXCIL™ designs and develops websites for all browsers and devices, from desktop to tablet and mobile.
+           	 </p>
+      </div><!--fim das home-cols-->
+      
+      <div class="home-cols">
+      		<h1 class="h1-homecol">Boas Pr&aacute;ticas</h1>
+          	<img src="img/col3.png" alt="onon 3" class="img-homecol" />
+            <p class="txt-homecol">
+            	PEXCIL™ designs and develops websites for all browsers and devices, from desktop to tablet and mobile.
+           	 </p>
+      </div><!--fim das home-cols-->
+        
+      <div class="home-cols">
+      		<h1 class="h1-homecol">Design e Gest&atilde;o</h1>
+          	<img src="img/col4.png" alt="onon 4" class="img-homecol" />
+            <p class="txt-homecol">
+            	PEXCIL™ designs and develops websites for all browsers and devices, from desktop to tablet and mobile.
+           	 </p>
+      </div><!--fim das home-cols-->
+    </div><!--fim do CORPO-->
   
   <div id="rodape">This is the content for Layout Div Tag "rodape"</div>
 </div>
