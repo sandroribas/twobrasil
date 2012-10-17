@@ -198,7 +198,7 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	#menu {
 		clear: both;
 		float: left;
-		height:65%;
+		height:auto;
 		margin-left: 0;
 		width: 100%;
 		display: block;
@@ -327,7 +327,7 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	#menu {
 		clear: both;
 		float: left;
-		height:65%;
+		height:auto;
 		margin-left: 0;
 		width: 100%;
 		display: block;
