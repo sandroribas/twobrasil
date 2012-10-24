@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+.container-gal{ width: 80%; margin: 30px auto; overflow:hidden;}
+.itemGaleria{ color: #ff3300; font: 10px/1.5 Verdana, Helvetica, sans-serif; width: 16%;	margin:  2% 2% 50px 2%; float: left; -webkit-transition: color 0.5s ease;}
+.itemGaleria h3{ text-transform:uppercase; line-height: 2;}
+.itemGaleria p{ color:#666;}
+.itemGaleria img{ max-width: 100%; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.itemGaleria:hover { color: #990; cursor:pointer;}
+
+.topoGaleria {
+	width: 80%;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.topoGaleria h1 {
+	font: 50px/1.0 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0 0 15px 2%;
+	color:#ff3300;
+}
+
+.topoGaleria p {
+	color: #666;
+	font: 10px/1.5 Verdana, Helvetica, sans-serif;
+	margin: 0 0 0 2%;
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width : 940px),
+only screen and (max-device-width : 940px){
+	.itemGaleria {width: 21%;}
+}
+
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+	.itemGaleria {width: 29.33333%;}
+	.topoGaleria h1 {font-size: 40px;}
+}
+
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+	.itemGaleria {width: 46%;}
+	.topoGaleria h1 {font-size: 28px;}
+}
+
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+	.itemGaleria {width: 96%;}
+	.itemGaleria img {width: 96%;}
+	.itemGaleria h3 {font-size: 18px;}
+	.itemGaleria p, .topoGaleria p {font-size: 18px;}
+	.topoGaleria h1 {font-size: 35px;}
+}
+</style>
+</head>
+
+<body>
+	<div class="topoGaleria">
+    	<h1>Responsive Thumbnail Gallery</h1>
+    	<p><a href="http://designshack.net/articles/css/how-to-build-a-responsive-thumbnail-gallery">Click here</a> to return to Design Shack. Resize this page to see the responsiveness in action. Instead of thinking about which media queries are the most popular, we instead analyzed the points where our specific design ceased being functional and reduced the number of columns at that point to make for a better reading experience. The result is a design that excels in the in-between.</p>
+    </div>
+    
+<div class="container-gal">
+  <div class="itemGaleria">
+  	<a href="#"><img src="img/gal1.jpg" alt="Um" /></a>
+    <h3>Um</h3><p>Lorem ipsum dolor sit amet...</p>
+  </div><!--itemGaleria-->
+  
+  <div class="itemGaleria">
+  	<a href="#"><img src="img/gal2.jpg" alt="Dois" /></a>
+    <h3>Dois</h3><p>Lorem ipsum dolor sit amet...</p>
+  </div><!--itemGaleria-->
+  
+  <div class="itemGaleria">
+  	<a href="#"><img src="img/gal3.jpg" alt="Três" /></a>
+    <h3>Três</h3><p>Lorem ipsum dolor sit amet...</p>
+  </div><!--itemGaleria-->
+  
+  <div class="itemGaleria">
+  	<a href="#"><img src="img/gal4.jpg" alt="Quatro" /></a>
+    <h3>Quatro</h3><p>Lorem ipsum dolor sit amet...</p>
+  </div><!--itemGaleria-->
+  
+  <div class="itemGaleria">
+  	<a href="#"><img src="img/gal5.jpg" alt="Cinco" /></a>
+    <h3>Cinco</h3><p>Lorem ipsum dolor sit amet...</p>
+  </div><!--itemGaleria-->
+  
+  <div class="itemGaleria">
+  	<a href="#"><img src="img/gal6.jpg" alt="Seis" /></a>
+    <h3>Seis</h3><p>Lorem ipsum dolor sit amet...</p>
+  </div><!--itemGaleria-->
+  
+  <div class="itemGaleria">
+  	<a href="#"><img src="img/gal7.jpg" alt="Sete" /></a>
+    <h3>Sete</h3><p>Lorem ipsum dolor sit amet...</p>
+  </div><!--itemGaleria-->
+  
+  <div class="itemGaleria">
+  	<a href="#"><img src="img/gal8.jpg" alt="Oito" /></a>
+    <h3>Oito</h3><p>Lorem ipsum dolor sit amet...</p>
+  </div><!--itemGaleria-->
+  
+  <div class="itemGaleria">
+  	<a href="#"><img src="img/gal9.jpg" alt="Nove" /></a>
+    <h3>Nove</h3><p>Lorem ipsum dolor sit amet...</p>
+  </div><!--itemGaleria-->
+  
+  <div class="itemGaleria">
+  	<a href="#"><img src="img/gal10.jpg" alt="Dez" /></a>
+    <h3>Dez</h3><p>Lorem ipsum dolor sit amet...</p>
+  </div><!--itemGaleria-->
+</div><!--CONTAINER-->
+</body>
+</html>
